@@ -1,0 +1,17 @@
+[package]
+name = "recipe_registry"
+version = "0.1.0"
+edition = "2021"
+description = "Out-of-band recipe selection: a bitpacked family/version/variant key plus the observed length pick the dependent recipe that parses the bytes. Ambiguity is refused when the catalog is built."
+license = "MIT OR Apache-2.0"
+authors = ["James Hunt"]
+repository = "https://github.com/jameshuntt/recipe_registry"
+readme = "README.md"
+keywords = ["recipe", "registry", "dispatch", "binary", "protocol"]
+categories = ["parser-implementations", "encoding"]
+
+[dependencies]
+recipe = { path = "../recipe", version = "0.1.3" }
+recipe_writer = { path = "../recipe_writer", version = "0.2.0" }
+big-bad-bool = "0.1"
+thiserror = "1"
