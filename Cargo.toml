@@ -1,6 +1,6 @@
 [package]
 name = "recipe_registry"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Out-of-band recipe selection: a bitpacked family/version/variant key plus the observed length pick the dependent recipe that parses the bytes. Ambiguity is refused when the catalog is built."
 license = "MIT OR Apache-2.0"
